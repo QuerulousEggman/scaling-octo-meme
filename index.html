@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Holidays</h1>
+    <ul class='navbar' id='menu'>
+      <li><a href="./" title='Go to the home page'>Home</a></li>
+      <li><a href="about.html" title='Information about me'>About Us</a></li>
+      <li><a href="blog.html" title='Go to my travel blog'>My Blog</a></li>
+      <li><a href="forum.html" title='Join in with like minded individuals on our forum'>Forum</a></li>
+      <li><a href="photos.html" title='look at some photos I took while on my travels'>Photos</a></li>
+    </ul>
+  </header>
+  <article class='description'>
+  <p>
+    I really enjoy going on holiday. Whether it's to a hot or cold place, there's always something special about creating those memories.
+  </p>
+  <p>
+    So I thought why not find out what other people like doing for their holidays. Do I stand out? Are there things in common?
+  </p>
+  <p>
+    What follows are a few questions that will give me an idea of what people prefer.
+  </p>
+</article>
+  <h2>Where would you like to go?</h2>
+  <form>
+    <label for="place">Place:</label><br>
+    <input type='text' id='place' name='Place' required><br>
+    <label for="city">City:</label><br>
+    <input type='text' id='city' name='City'><br>
+    <label for="country">Country:</label><br>
+    <input type='text' id='country' name='Country'>
+  </form>
+  <h2>What would you like to see?</h2>
+  <form>
+    <input type="checkbox" id='nature' name='like_to_see' value='Nature'>
+    <label for="nature">Nature</label><br>
+    <input type="checkbox" id='wildlife' name='like_to_see' value='Wildlife'>
+    <label for="wildlife">Wildlife</label><br>
+    <input type="checkbox" id='art' name='like_to_see' value='Art'>
+    <label for="art">Art</label><br>
+    <input type="checkbox" id='history' name='like_to_see' value='History'>
+    <label for="history">History</label><br>
+    <input type="checkbox" id='people' name='like_to_see' value='People'>
+    <label for="people">People</label><br>
+  </form>
+  <h2>Where would you like to stay?</h2>
+  <form>
+    <input type="radio" name="stay" id="city" value='City'>
+    <label for="city">City</label><br>
+    <input type="radio" name="stay" id="countryside" value='Countryside'>
+    <label for="countryside">Countryside</label><br>
+    <input type="radio" name="stay" id="beachfront" value='Beachfront'>
+    <label for="beachfront">Beachfront</label><br>
+    <input type="radio" name="stay" id="forest" value='Forest'>
+    <label for="forest">Forest</label><br>
+  </form>
+  <h2>
+    About You
+  </h2>
+  <p>
+    Finally, just a few more details to gain a demographic insight:
+  </p>
+  <form>
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id='dob' name='Date of Birth'><br><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id='gender' name='Gender' value='Male'>Male<br>
+    <input type="radio" id='gender' name='Gender' value='Female'>Female<br>
+    <input type="radio" id='gender' name='Gender' value='Other'>Other<br><br>
+    <label for="occupation">Job Role:</label><br>
+    <input type="text" id='occupation' name='Job Role'><br><br>
+  </form>
+  <!--<input type="submit" value='Submit information' /> -->
+  <button type='submit'>Submit</button>
+  <script src='js/app.js' type='module' defer></script>
+</body>
+<hr>
+<footer>
+  <a href="ContactUs">Contact Us</a>
+  <a href="Accessibility">Accessibility</a>
+  <a href="Legal">Legal</a>
+  <a href="Feedback">Feedback</a>
+</footer>
+</html>
